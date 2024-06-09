@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Tela de Login</title>
+</head>
+
+<body>
+    <div class="main-login">
+        <div class="left-login">
+            <h1>Faça o Login </h1>
+            <img src="./assets/finance.svg" class="left-image" alt="Imagem Finaças">
+        </div>
+        <div class="right-login">
+            <div class="card-login">
+                <h1>Login</h1>
+                <div class="textfield">
+                    <label for="conta">Conta</label>
+                    <input type="text" name="conta" placeholder="Numero da Conta" id="conta">
+                </div>
+                <div class="textfield">
+                    <label for="senha">Senha</label>
+                    <input type="password" name="senha" placeholder="Senha" id="senha">
+                    <button class="btn-login" onclick="logar()">Login</button> 
+                </div>
+            </div>
+        </div>
+    </div>
+      <script>  function logar(){
+                var conta = document.getElementById('conta').value;
+                var senha = document.getElementById('senha').value;
+
+                if(conta == "8000" && senha =="123"){
+                    alert('Sucesso')
+                    location.href = "finances.html"
+                }else{
+                    alert('Usuario ou Senha errados')
+                }
+        }
+    </script>
+
+</body>
+
+</html>
